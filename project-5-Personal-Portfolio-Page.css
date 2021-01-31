@@ -1,1 +1,151 @@
+body {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+}
 
+#welcome-section {
+  color: #eeeff6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #313639;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.headers {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 65px;
+  text-align: center;
+}
+
+.subheadings {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  color: #f05454;
+  font-weight: bold;
+  text-align: center;
+}
+
+#projects {
+  background-color: #2f3d81;
+  color: #eeeff6;
+  align-item: center;
+}
+
+.project-tile {
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 100px 0 40px 0;
+}
+
+#container {
+  display: flex;
+}
+
+.box {
+  margin: 0 15px;
+  padding:0;
+  border: 1px solid #2f3d81;
+  width: 300px;
+}
+
+.box h2 {
+  background-color: #313639;
+  color: #eeeff6;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  align-items: center;
+  height: 50px;
+  margin:0;
+  padding:0;
+}
+
+#show-all {
+  color: #eeeff6;
+  background-color: dimgrey;
+  font-size: 20px;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+#contact {
+  background-color: #313639;
+  color: #eeeff6;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 100px 0 40px 0;
+  line-height: 10px;
+  text-align: center;
+}
+
+#links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: flex;
+  justify-content: center;
+}
+
+#links img {
+  margin: 10px 20px;
+}
+
+#links img:hover {
+  transform: skewX(20deg);
+  transform: scale(1.5);
+
+}
+
+a {
+  text-decoration: none;
+  color: #eeeff6;
+}
+
+nav {
+  background-color: maroon;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  margin: 20px;
+  list-style-type: none;
+}
+
+nav a{
+  margin: 0 10px;
+  padding: 5px;
+  color: #eeeff6;
+  font-size: 30px;
+  font-family: 'Gruppo', cursive;
+}
+
+#github {
+  margin:0;
+  padding:0;
+}
+
+@media (max-width: 28.75em) {
+  .nav {
+    justify-content: center;
+  }
