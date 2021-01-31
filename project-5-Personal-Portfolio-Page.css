@@ -38,11 +38,12 @@ body {
 
 #projects {
   background-color: #2f3d81;
-  color: #eeeff6;
-  align-item: center;
+  display: grid;
+  max-width: 100%;
 }
 
 .project-tile {
+  color: #eeeff6;
   text-align: center;
   font-size: 40px;
   text-decoration: underline;
@@ -53,13 +54,14 @@ body {
 
 #container {
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .box {
-  margin: 0 15px;
+  margin: 0;
   padding:0;
   border: 1px solid #2f3d81;
-  width: 300px;
 }
 
 .box h2 {
@@ -69,16 +71,23 @@ body {
   text-align: center;
   align-items: center;
   height: 50px;
+  width: 400px;
   margin:0;
   padding:0;
 }
 
+.box:hover {
+  transform: scale(1.1);
+}
+
 #show-all {
   color: #eeeff6;
-  background-color: dimgrey;
-  font-size: 20px;
+  background-color: #313639;
+  font-size: 25px;
   margin: 20px 0;
   justify-content: center;
+  display: inline-block;
+  align-items: center;
 }
 
 #contact {
@@ -86,9 +95,10 @@ body {
   color: #eeeff6;
   font-family: 'Montserrat', sans-serif;
   margin: 0;
-  padding: 100px 0 40px 0;
-  line-height: 10px;
+  padding: 150px 0 0 0;
+  line-height: 20px;
   text-align: center;
+  height: 55vh;
 }
 
 #links {
@@ -103,9 +113,7 @@ body {
 }
 
 #links img:hover {
-  transform: skewX(20deg);
   transform: scale(1.5);
-
 }
 
 a {
@@ -140,9 +148,14 @@ nav a{
   font-family: 'Gruppo', cursive;
 }
 
-#github {
-  margin:0;
-  padding:0;
+footer {
+  background-color: #313639;
+  color: #eeeff6;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 10px 10px;
+  line-height: 10px;
+  text-align: right;
 }
 
 @media (max-width: 28.75em) {
