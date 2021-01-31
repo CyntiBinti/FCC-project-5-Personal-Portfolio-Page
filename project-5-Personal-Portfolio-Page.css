@@ -158,7 +158,24 @@ footer {
   text-align: right;
 }
 
-@media (max-width: 28.75em) {
-  .nav {
-    justify-content: center;
+@media (max-width: 600px) {
+    .nav-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+     }
+    .headers, .subheadings {
+      font-size: 180%;
+     }
+  }
+
+@media (max-width: 450px) {
+    .nav-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+     }
+    .headers, .subheadings {
+      font-size: 100%;
+     }
   }
